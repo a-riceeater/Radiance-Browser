@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css?family=Inter");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css?family=Nunito Sans");
+@import url("https://fonts.googleapis.com/css?family=Google Sans");
+
+#tabBar {
+    -webkit-user-select: none;
+    -webkit-app-region: drag;
+    height: 40px;
+    background-color: #0B132B;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    border-bottom: 3px solid #1C2541;
+}
+
+.tab,
+.tabBarBtn {
+    -webkit-app-region: no-drag;
+}
+
+#navigatorBar {
+    position: fixed;
+    top: calc(40px + 3px);
+    height: 45px;
+    left: 0%;
+    width: 100%;
+    background-color: #0B132B;
+}
+
+#navigatorButtons {
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: white;
+}
+
+#navFor, #navBack {
+    margin-left: 10px;
+    font-family: 'Google Sans', serif;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+#navigatorSearch {
+    position: absolute;
+    left: 50px;
+    height: 100%;
+    top: 0%;
+    width: calc(100% - 50px);
+    float: left;
+    display: flex;
+    align-items: center;
+    font-family: 'Google Sans', serif;
+    color: lightgray;
+    outline: 0;
+    padding-left: 15px;
+    background-color: transparent;
+    border: none
+}
+
+#navsPlaceholder {
+    z-index: -1;
+    display: block;
+    opacity: 0.5;
+}
+
+#pageContent {
+    position: fixed;
+    left: 0%;
+    top: calc(45px + 3px + 40px);
+    width: 100%;
+    height: calc(100% - (45px + 3px + 40px));
+    background-color: #3A506B;
+}
+
+#radianceTabBarLogo {
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: lightgray;
+    font-family: 'Google Sans', sans-serif;
+    height: 100%;
+    width: 30px;
+    text-align: right;
+    cursor: pointer !important;
+    z-index: 5;
+}
+
+.tab {
+    height: 100%;
+    font-family: 'Google Sans', sans-serif;
+    color: lightgray;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    cursor: default;
+    border-radius: 5px;
+    border-bottom-left-radius: 0%;
+    border-bottom-right-radius: 0%;
+    vertical-align: top;
+    float: left;
+    margin-left: 5px;
+    font-size: 15px;
+    padding-left: 15px;
+}
+
+.tabClose {
+    float: right;
+    margin-left: 25px;
+    vertical-align: middle;
+    font-size: 12px;
+    cursor: pointer;
+    color: gray;
+}
+
+.tabTitle {
+    float: left;
+    vertical-align: middle;
+}
+
+.identify-currentTab {
+    border: 1.5px solid #3A506B;
+    border-bottom: none;
+}
