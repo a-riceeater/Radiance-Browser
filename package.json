@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "@electron/remote": "^2.0.9",
+    "electron": "^24.1.2",
+    "electron-as-browser": "^1.0.0"
+  },
+  "main": "window.js"
+}
